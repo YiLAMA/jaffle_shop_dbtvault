@@ -1,0 +1,12 @@
+version: 2
+
+models:
+
+    - name: task1
+      tests:
+        - unique:
+            column_name: (number_week || status)
+        - not_null:
+            column_name: number_week
+        - not_null:
+            column_name: status
